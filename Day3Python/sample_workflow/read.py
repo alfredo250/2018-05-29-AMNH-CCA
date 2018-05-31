@@ -1,0 +1,12 @@
+'''here wew store some sample way to read in the data and spit out the pieces we want
+lets assume all the data we are using has a header, and columns, so we can read it using pandas read_csv method'''
+import pandas as pd
+
+def read_my_csv(csvfile):
+    '''our cvs are spaced separately'''
+   # if __name__ == '__main__':
+    data = pd.read_csv(csvfile, sep=' ')
+    return  data.xaxis, data.yaxis
+if __name__ == '__main__':
+    print read_my_csv('../data/linear_data.dat')
+
