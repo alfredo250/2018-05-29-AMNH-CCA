@@ -1,0 +1,6 @@
+'''This module contains some functions we will create '''
+# lets mkae our simple division function a bit more complicated
+def division_function_to_test(dividend, divisor) :
+    dividend = float(dividend)
+    divisor = float(divisor)
+    return (dividend/divisor)
